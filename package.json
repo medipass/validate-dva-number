@@ -1,0 +1,21 @@
+{
+  "name": "validate-dva-number",
+  "version": "1.0.0",
+  "description": "Validates a Department of Veterans' Affairs number",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medipass/validate-dva-number.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medipass/validate-dva-number/issues"
+  },
+  "homepage": "https://github.com/medipass/validate-dva-number#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
