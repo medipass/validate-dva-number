@@ -1,11 +1,15 @@
 const validateDvaNumber = require('./index');
 
 test('throws if the DVA card number is not provided', () => {
-  expect(() => validateDvaNumber()).toThrowError();
+  expect(() => validateDvaNumber()).toThrow();
 });
 
 test('throws if the DVA card number is not a string', () => {
-  expect(() => validateDvaNumber(123)).toThrowError();
+  expect(() => validateDvaNumber(123)).toThrow();
+});
+
+test('returns false when state identifier is a comma', () => {
+  expect(validateDvaNumber(',B123')).toEqual(false);
 });
 
 [
